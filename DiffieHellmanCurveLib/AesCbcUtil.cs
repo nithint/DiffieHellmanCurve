@@ -23,6 +23,7 @@ namespace DiffieHellmanCurveLib
             AesAlgo = Aes.Create();
             AesAlgo.Key = this.Key;
             AesAlgo.Mode = CipherMode.CBC;
+            AesAlgo.Padding = PaddingMode.Zeros;
         }
 
         public byte[] GenerateIV()

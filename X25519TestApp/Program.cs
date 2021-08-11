@@ -34,7 +34,6 @@ namespace X25519TestApp
                     Console.WriteLine($"Original message from server: {await client.RetrieveMessage(url)}");
                     break;
             }
-
         }
 
         private static void DisplayHelp()

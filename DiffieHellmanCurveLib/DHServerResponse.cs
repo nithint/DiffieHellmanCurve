@@ -38,6 +38,13 @@ namespace DiffieHellmanCurveLib
         }
 
         /// <summary>
+        /// Initializes a new instance of ServerResponse with empty properties.
+        /// </summary>
+        public DHServerResponse()
+        {
+        }
+
+        /// <summary>
         /// Initializes a new instance of ServerResponse.
         /// </summary>
         /// <param name="publicKey"></param>

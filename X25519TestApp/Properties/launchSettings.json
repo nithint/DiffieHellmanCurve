@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "X25519TestApp": {
+      "commandName": "Project"
+    }
+  }
+}

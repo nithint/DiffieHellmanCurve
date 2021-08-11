@@ -96,7 +96,7 @@ namespace DiffieHellmanCurveLib
         /// - Item3 = initialization vector
         /// </param>
         /// <returns>The plaintext message</returns>
-        private string DecryptMessage(DHServerResponse response)
+        public string DecryptMessage(DHServerResponse response)
         {
             var serverPublicKeyBytes = Convert.FromBase64String(response.ServerPublicKey);
             var dhSecretKey = ScalarMult.Mult(ClientKeyPair.PrivateKey, serverPublicKeyBytes);
